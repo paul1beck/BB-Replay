@@ -2,34 +2,78 @@ import pandas as pd
 import xml.etree.ElementTree as et
 
 
+xml_example = 'bbreplay.xml'
 
-def parse_XML(xml_file, df_cols): 
-    """Parse the input XML file and store the result in a pandas 
-    DataFrame with the given columns. 
-    
-    The first element of df_cols is supposed to be the identifier 
-    variable, which is an attribute of each node element in the 
-    XML data; other features will be parsed from the text content 
-    of each sub-element. 
-    """
-    
-    xtree = et.parse(xml_file)
-    xroot = xtree.getroot()
-    rows = []
-    
-    for node in xroot: 
-        res = []
-        res.append(node.attrib.get(df_cols[0]))
-        for el in df_cols[1:]: 
-            if node is not None and node.find(el) is not None:
-                res.append(node.find(el).text)
-            else: 
-                res.append(None)
-        rows.append({df_cols[i]: res[i] 
-                     for i, _ in enumerate(df_cols)})
-    
-    out_df = pd.DataFrame(rows, columns=df_cols)
-        
-    return out_df
+'''
+rolls = {
+  Unknown = -1,
+  Move = 0,
+  GFI = 1,
+  Dodge = 2,
+  Armor = 3,
+  Injury = 4,
+  Block = 5,
+  Pickup=7,
+  CasualtyRoll=8,
+  Catch=9,
+  Kickoff=10,
+  Pass = 12,
+  Push = 13,
+  FollowUp = 14,
+  Touchback = 19,
+  Bonehead=20, 
+  WildAnimal=22, 
+  Loner=23,
+  Dauntless = 29, 
+  Leap=36, 
+  HypnoticGaze=46,
+  MoveToBall = 58, 
+  PilingOnArmour = 59, //?
+  PilingOnInjury = 60, //?
+  EndTurn = 1000,
+  Touchdown = 1001,
+  KickoffEvent = 1002,
+  Blitz = 1003,
+  KickBall = 1004,
+  BallAction = 1005,
+  Foul = 2000
+}
+'''
 
-test = parse_XML('bbreplay.xml', ["ReplayStep"])
+root = et.parse(xml_example).getroot()
+tags = {"tags":[]}
+
+
+def unroll(data):
+    '''takes xml root and pulls out every child item'''
+    value = {}
+    for x in data.findall(".//"):
+        if x.text == None:
+            unroll(x)
+        else: value[x.tag] = x.text
+    return value
+
+def unroll2(data):
+    frame = {}
+    for x in data.findall(".//"):
+        value = {}
+        if x.text == None:
+            unroll(x)
+        else: 
+            value[x.tag] = x.text
+            frame.update(value)
+    return frame
+
+#for action in root.iter('RulesEventBoardAction'):
+#    stuff = unroll(action)
+#    print(stuff)
+
+df=pd.DataFrame()
+
+indexloc=0
+
+for action in root:
+    stuff = unroll(action)
+    indexloc=+1
+#    df.append(pd.DataFrame.from_dict(stuff, orient="columns", index=indexloc))
+    df.append(pd.DataFrame.from_dict(stuff, orient="index"))
