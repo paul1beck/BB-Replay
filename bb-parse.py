@@ -1,8 +1,6 @@
+
+import xml.etree.cElementTree as et
 import pandas as pd
-import xml.etree.ElementTree as et
-
-
-xml_example = 'bbreplay.xml'
 
 '''
 rolls = {
@@ -40,40 +38,31 @@ rolls = {
 }
 '''
 
-root = et.parse(xml_example).getroot()
-tags = {"tags":[]}
-
-
-def unroll(data):
-    '''takes xml root and pulls out every child item'''
-    value = {}
-    for x in data.findall(".//"):
-        if x.text == None:
-            unroll(x)
-        else: value[x.tag] = x.text
+ 
+def unroll(node, find):
+    value=None
+    for x in node.findall('.//'+find):
+        if x.text==None:
+            unroll(x, './/'+find)
+        else: value=x.text 
     return value
 
-def unroll2(data):
-    frame = {}
-    for x in data.findall(".//"):
-        value = {}
-        if x.text == None:
-            unroll(x)
-        else: 
-            value[x.tag] = x.text
-            frame.update(value)
-    return frame
 
-#for action in root.iter('RulesEventBoardAction'):
-#    stuff = unroll(action)
-#    print(stuff)
+def main():
+    """ main """
+    parsed_xml = et.parse("bbreplay.xml")
+    dfcols = ['PlayerId', 'RequestType', 'Requirement', 'RollType', 'ListDices']
+    df_xml = pd.DataFrame(columns=dfcols)
+ 
+    for node in parsed_xml.getroot():
+        items = []
+        for col in dfcols:
+            items.append(unroll(node,col))
 
-df=pd.DataFrame()
+        df_xml = df_xml.append(
+            pd.Series(items, index=dfcols),
+            ignore_index=True)
+    return df_xml
 
-indexloc=0
-
-for action in root:
-    stuff = unroll(action)
-    indexloc=+1
-#    df.append(pd.DataFrame.from_dict(stuff, orient="columns", index=indexloc))
-    df.append(pd.DataFrame.from_dict(stuff, orient="index"))
+ 
+test = main()
