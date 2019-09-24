@@ -123,6 +123,6 @@ dmypy.json
 .pyre/
 
 # Custom
-.vscode
+.vscode/
 .git*
 .pylintrc
