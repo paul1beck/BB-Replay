@@ -1,6 +1,7 @@
 
 import xml.etree.cElementTree as et
 import pandas as pd
+import numpy as np
 
 
 rolls = {
@@ -37,8 +38,39 @@ rolls = {
   2000:'Foul'
 }
 
+def unnesting(df, explode):
+    idx = df.index.repeat(df[explode[0]].str.len())
+    df1 = pd.concat([pd.DataFrame({x:np.concatenate(df[x].values)}) for x in explode], axis=1)
+    df1.index = idx
+    return df1.join(df.drop(explode, 1), how='left')
 
+
+
+def extends_iloc(df):
+    cols_to_flatten = [colname for colname in df.columns if isinstance(df.iloc[0][colname],list)]
+    lens = df[cols_to_flatten[0]].apply(len)
+    vals = range(df.shape[0])
+    ilocations=np.repeat(vals,lens)
+    with_idx=[(i,c) for (i,c) in enumerate(df.columns) if c not in cols_to_flatten]
+    col_idxs=list(zip(*with_idx)[0])
+    new_df=df.iloc[ilocations, col_idxs].copy()
+    for col_target in cols_to_flatten:
+        col_flat = [item for sublist in df[col_target] for item in sublist]
+        new_df[col_target]=col_flat
+    return new_df
  
+def extends_iloc_test(df):
+    cols_to_flatten = ['RollType','ListDices']
+    lens = df[cols_to_flatten[0]].apply(len)
+    vals = range(df.shape[0])
+    ilocations=np.repeat(vals,lens)
+    col_idxs=['PlayerId','Requirement','Reroll','GameTurn']
+    new_df=df.iloc[ilocations, col_idxs].copy()
+    for col_target in cols_to_flatten:
+        col_flat = [item for sublist in df[col_target] for item in sublist]
+        new_df[col_target]=col_flat
+    return new_df    
+
 def unroll(node, find):
     value=[]
     for x in node.iterfind('.//'+find):
@@ -53,8 +85,8 @@ def unroll(node, find):
 def main():
     """ main """
     parsed_xml = et.parse("bbreplay.xml")
-    dfcols = ['PlayerId', 'Requirement', 'RollType', 'ListDices','Reroll','GameTurn']
-    findcols = ['PlayerId', 'Requirement', 'RollType', 'ListDices','Reroll']
+    dfcols = ['PlayerId','Requirement','RollType','ListDices','Reroll','GameTurn']
+    findcols = ['PlayerId','Requirement','RollType','ListDices','Reroll']
     df_xml = pd.DataFrame(columns=dfcols)
  
     for node in parsed_xml.getroot():
@@ -66,8 +98,9 @@ def main():
             df_xml = df_xml.append(
                 pd.Series(items, index=dfcols),
                 ignore_index=True)
-    df_xml = df_xml.dropna(thresh=3)
+    df_xml = df_xml.dropna(thresh=3).reset_index(drop=True)
     return df_xml
 
  
 test = main()
+test2 = extends_iloc_test(test)
