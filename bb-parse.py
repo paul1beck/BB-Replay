@@ -1,67 +1,10 @@
-
 import xml.etree.cElementTree as et
 import pandas as pd
-import numpy as np
 import copy
 
-rolls = {
-  '-1': 'Unknown',
-  '0':'Move',
-  '1':'GFI',
-  '2':'Dodge',
-  '3':'Armor',
-  '4':'Injury',
-  '5':'Block',
-  '6':'Standup',
-  '7':'Pickup',
-  '8':'CasualtyRoll',
-  '9':'Catch',
-  '10':'Kickoff',
-  '12':'Pass',
-  '13':'Push',
-  '14':'FollowUp',
-  '16':'Intercept',
-  '17':'WakeUpKO',
-  '19':'Touchback',
-  '20':'Bonehead',
-  '21':'ReallyStupid',
-  '22':'WildAnimal', 
-  '23':'Loner',
-  '24':'Landing',
-  '25':'Regeneration',
-  '26':'InaccuratePass',
-  '27':'AlwaysHungry',
-  '29':'Dauntless',
-  '31':'Jumpup',
-  '36':'Leap', 
-  '37':'FoulAppearance',
-  '38':'Tentacles',
-  '39':'Chainsaw',
-  '40':'TakeRoot',
-  '44':'DivingTackle',
-  '45':'Pro',
-  '46':'HypnoticGaze',
-  '50':'BloodLust',
-  '52':'Bribe',
-  '55':'LightningBolt',
-  '56':'ThrowTeamMate',
-  '58':'MoveToBall',
-  '59':'PilingOnArmour', # ?
-  '60':'PilingOnInjury', # ?
-  '72':'ImpactOfTheBomb',
-  '1000':'EndTurn',
-  '1001':'Touchdown',
-  '1002':'KickoffEvent',
-  '1003':'Blitz',
-  '1004':'KickBall',
-  '1005':'BallAction',
-  '2000':'Foul',
-}
+from utilities import add_roll_name
 
-def add_roll_name(num):
-    for x in rolls.keys():
-        if x==num:
-            return rolls[x]
+
 
 def flatten_rolltype(df):
     new_df = pd.DataFrame()
@@ -87,7 +30,7 @@ def unroll(node, find):
         else: value.append(x.text)
     if find=='PlayerId' and len(value)>1:
         value = value[0]
-    return value[0] if len(value)==1 else value if len(value)>1 else None
+    return value[0] if len(value)==1 else tuple(value) if len(value)>1 else None
 
 
 def main():
@@ -106,10 +49,10 @@ def main():
             df_xml = df_xml.append(
                 pd.Series(items, index=dfcols),
                 ignore_index=True)
-#    df_xml = df_xml.dropna(thresh=3).reset_index(drop=True)
-    df_xml = df_xml.dropna(subset=['RollType']).reset_index(drop=True)
+    df_xml = df_xml.dropna(subset=['RollType','ListDices']).reset_index(drop=True)
     return df_xml
 
  
 test = main()
 test2 = flatten_rolltype(test)
+test3 = test2.dropna(subset=['IsOrderCompleted']).reset_index(drop=True)
