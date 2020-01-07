@@ -6,6 +6,12 @@ def add_roll_name(num):
 
 block_dice = {"0": "Skull", "1": "Both Down", "2": "Push", "3": "Stumble", "4": "Pow"}
 
+block_results = {"0":"Attacker Down","1":"Attacker and Defender Down","2":"Wrestle Down","3":"Attacker and Defender Did not Move","4":"Defender Pushed","5":"Attacker in Place, Defender Down","6":"Defender Down"}
+
+roll_status = {"0":"No Re-roll","1":"Re-roll Taken","2":"Re-roll Not Taken","3":"Skill Re-roll"}
+
+result_type = {"0":"Skill Passed","1":"Failure but no Turnover","2":"Failed with Re-Roll","3":"Failed with no Re-roll"}
+
 rolls = {
     "-1": "Unknown",
     "0": "Move",
@@ -18,7 +24,7 @@ rolls = {
     "7": "Pickup",
     "8": "CasualtyRoll",
     "9": "Catch",
-    "10": "Kickoff",
+    "10": "Scatter",
     "12": "Pass",
     "13": "Push",
     "14": "FollowUp",
