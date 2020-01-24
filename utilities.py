@@ -1,9 +1,26 @@
-def add_roll_name(num):
+def add_roll_name(desc, num):
     '''Uses rolls dictionary to match against the roll value in the export'''
-    for x in rolls.keys():
-        if x==num:
-            return rolls[x]
-
+    if desc=='rolls':
+        for x in rolls.keys():
+            if x==num:
+                return rolls[x]
+    elif desc=='block_dice':
+        for x in block_dice.keys():
+            if x==num:
+                return block_dice[x]
+    elif desc=='block_results':
+        for x in block_results.keys():
+            if x==num:
+                return block_results[x]
+    elif desc=='roll_status':
+        for x in roll_status.keys():
+            if x==num:
+                return roll_status[x]
+    elif desc=='result_type' and num!=None:
+        for x in result_type.keys():
+            if x==num:
+                return result_type[x]
+            
 block_dice = {"0": "Skull", "1": "Both Down", "2": "Push", "3": "Stumble", "4": "Pow"}
 
 block_results = {"0":"Attacker Down","1":"Attacker and Defender Down","2":"Wrestle Down","3":"Attacker and Defender Did not Move","4":"Defender Pushed","5":"Attacker in Place, Defender Down","6":"Defender Down"}

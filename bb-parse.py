@@ -8,7 +8,7 @@ def flatten_rolltype(df):
     new_df = pd.DataFrame()
     for index, row in df.iterrows():
         if type(row['RollType'])==str:
-            row['RollName']=add_roll_name(row['RollType'])
+            row['RollName']=add_roll_name('rolls',row['RollType'])
             new_df = new_df.append(row)
         else:
             for x in range(len(row['RollType'])):
@@ -18,7 +18,11 @@ def flatten_rolltype(df):
                 breakout_row['Requirement'] = breakout('Requirement',x,row)
                 breakout_row['IsOrderCompleted'] = breakout('IsOrderCompleted',x,row)
                 breakout_row['ResultType']=breakout('ResultType',x,row)
-                breakout_row['RollName']=add_roll_name(row['RollType'][x])
+                breakout_row['RollName']=add_roll_name('rolls',row['RollType'][x])
+                if row['ResultType']==None:
+                    pass
+                else:
+                    breakout_row['Roll Result']=add_roll_name('result_type',row['ResultType'][x])
                 new_df = new_df.append(breakout_row)
     return new_df.reset_index(drop=True)
 
@@ -63,9 +67,9 @@ def main():
     return df_xml
 
  
-#test = main()
-#test2 = flatten_rolltype(test)
-#test3 = test2.dropna(subset=['IsOrderCompleted']).reset_index(drop=True)
+test = main()
+test2 = flatten_rolltype(test)
+test3 = test2.dropna(subset=['IsOrderCompleted']).reset_index(drop=True)
 
 def players():
     player_cols = ['TeamId','Name','IdPlayerTypes','Id','ListSkills']
