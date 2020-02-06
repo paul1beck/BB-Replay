@@ -20,6 +20,11 @@ def add_roll_name(desc, num):
         for x in result_type.keys():
             if x==num:
                 return result_type[x]
+         
+def actions(data):
+    for x in rolls.keys():
+        if x==data:
+            return rolls[x].value()
             
 block_dice = {"0": "Skull", "1": "Both Down", "2": "Push", "3": "Stumble", "4": "Pow"}
 
