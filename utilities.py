@@ -20,12 +20,20 @@ def add_roll_name(desc, num):
         for x in result_type.keys():
             if x==num:
                 return result_type[x]
-         
-def actions(data):
-    for x in rolls.keys():
-        if x==data:
-            return rolls[x].value()
+
             
+def actionDesc(data):
+    return actions[data]
+
+def rollDesc(data):
+    return rolls[data]
+
+def blockResults(data):
+    return block_results[data]
+
+def blockDice(data):
+    return block_dice[data]
+
 block_dice = {"0": "Skull", "1": "Both Down", "2": "Push", "3": "Stumble", "4": "Pow"}
 
 block_results = {"0":"Attacker Down","1":"Attacker and Defender Down","2":"Wrestle Down","3":"Attacker and Defender Did not Move","4":"Defender Pushed","5":"Attacker in Place, Defender Down","6":"Defender Down"}
@@ -36,6 +44,7 @@ result_type = {"0":"Skill Passed","1":"Failure but no Turnover","2":"Failed with
 
 rolls = {
     "-1": "Unknown",
+    "": "",
     "0": "Move",
     "1": "GFI",
     "2": "Dodge",
@@ -51,6 +60,7 @@ rolls = {
     "12": "Pass",
     "13": "Push",
     "14": "FollowUp",
+    "15": "FoulRefCheck",
     "16": "Intercept",
     "17": "WakeUpKO",
     "19": "Touchback",
@@ -89,6 +99,8 @@ rolls = {
     "62": "DodgePick",
     "63": "StandFirm",
     "64": "Juggernaut",
+    "69": "Fame",
+    "70": "Weather",
     "71": "SwelteringHeat",
     "72": "ImpactOfTheBomb",
     "73": "ChainsawArmor",
@@ -102,6 +114,8 @@ rolls = {
 }
 
 actions = {
+    '-1' : 'Unknown',
+    "": "",
     '0':'Move',             #Move
     '1':'Block',            #Block
     '2':'Blitz',            #Blitz
@@ -135,4 +149,6 @@ actions = {
     '50':'BombKnockDown',
     '51':'BombHalfDown',
     '52':'BombThrow',
+    'Unknown_46':'Unknown_46',      #After Kickoff Choice, has 2 BoardActionResults with RT 69
+    'Unknown_47':'Unknown_47',      #After Kickoff Choice, has 1 BoardActionResult with RT 70
 }
