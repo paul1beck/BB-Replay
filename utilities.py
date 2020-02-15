@@ -34,11 +34,17 @@ def blockResults(data):
 def blockDice(data):
     return block_dice[data]
 
+def rerollStatus(data):
+    return roll_status[data]
+
+def raceLabel(data):
+    return races[data]
+
 block_dice = {"0": "Skull", "1": "Both Down", "2": "Push", "3": "Stumble", "4": "Pow"}
 
 block_results = {"0":"Attacker Down","1":"Attacker and Defender Down","2":"Wrestle Down","3":"Attacker and Defender Did not Move","4":"Defender Pushed","5":"Attacker in Place, Defender Down","6":"Defender Down"}
 
-roll_status = {"0":"No Re-roll","1":"Re-roll Taken","2":"Re-roll Not Taken","3":"Skill Re-roll"}
+roll_status = {"0":"No Re-roll","1":"Re-roll Taken","2":"Re-roll Not Taken","3":"Skill Re-roll", "4":"Skill Re-roll","":""}
 
 result_type = {"0":"Skill Passed","1":"Failure but no Turnover","2":"Failed with Re-Roll","3":"Failed with no Re-roll"}
 
@@ -152,3 +158,34 @@ actions = {
     'Unknown_46':'Unknown_46',      #After Kickoff Choice, has 2 BoardActionResults with RT 69
     'Unknown_47':'Unknown_47',      #After Kickoff Choice, has 1 BoardActionResult with RT 70
 }
+
+races = {
+    "1":"Human",
+    "2":"Dwarf",
+    "3":"Skaven",
+    "4":"Orc",
+    "5":"Lizardman",
+    "6":"Goblin",
+    "7":"Wood Elf",
+    "8":"Chaos",
+    "9":"Dark Elf",
+    "10":"Undead",
+    "11":"Halfling",
+    "12":"Norse",
+    "13":"Amazon",
+    "14":"Elven Union",
+    "15":"High Elf",
+    "16":"Khemri",
+    "17":"Necromantic",
+    "18":"Nurgle",
+    "19":"Ogre",
+    "20":"Vampire",
+    "21":"Chaos Dwarf",
+    "22":"Underworld Denizens",
+    "24":"Bretonnian",
+    "25":"Kislev"}
+
+
+
+
+
