@@ -1,6 +1,0 @@
-"ID","DataConstant","LocaName","Price","MaxQuantity","LocaFormated"
-"1","Popularity","GUI_POPULARITY","10000","0","INFO_POPULARITE"
-"2","Cheerleader","GUI_POMPOM","10000","0","INFO_POMPOM"
-"3","Apothecary","GUI_APOTHECARY","50000","1","INFO_APOTHICAIRE"
-"4","Reroll","GUI_REROLL","0","0","INFO_RELANCE"
-"5","AssistantCoach","GUI_ASSISTANTCOACH","10000","18","INFO_ASSISTANTCOACHES"
