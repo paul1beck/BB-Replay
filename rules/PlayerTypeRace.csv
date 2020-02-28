@@ -1,0 +1,527 @@
+ID,Player Type,Race
+1,Lineman,Human
+2,Catcher,Human
+3,Thrower,Human
+4,Blitzer,Human
+5,Ogre,Human
+6,Blocker,Dwarf
+7,Runner,Dwarf
+8,Blitzer,Dwarf
+9,Troll Slayer,Dwarf
+10,Death Roller,Dwarf
+11,Lineman,Wood Elf
+12,Catcher,Wood Elf
+13,Thrower,Wood Elf
+14,Wardancer,Wood Elf
+15,Treeman,Wood Elf
+16,Lineman,Skaven
+17,Thrower,Skaven
+18,Gutter Runner,Skaven
+19,Blitzer,Skaven
+20,Rat Ogre,Skaven
+21,Lineman,Orc
+22,Goblin,Orc
+23,Thrower,Orc
+24,Black Orc Blocker,Orc
+25,Blitzer,Orc
+26,Troll,Orc
+27,Skink,Lizardman
+28,Saurus,Lizardman
+29,Kroxigor,Lizardman
+30,Goblin,Goblin
+31,Looney,Goblin
+32,Beastman,Chaos
+33,Warrior,Chaos
+34,Minotaur,Chaos
+36,Grashnak Blackhoof,Star Player
+37,Griff Oberwald,Star Player
+38,Grim Ironjaw,Star Player
+39,Headsplitter,Star Player
+40,Jordel Freshbreeze,Star Player
+41,Ripper,Star Player
+42,Slibli,Star Player
+43,Varag Ghoul Chewer,Star Player
+44,Troll,Goblin
+45,Pogoer,Goblin
+46,Fanatic,Goblin
+47,Lineman,Dark Elf
+48,Runner,Dark Elf
+49,Assassin,Dark Elf
+50,Blitzer,Dark Elf
+51,Witch Elf,Dark Elf
+52,Horkon Heartripper,Star Player
+53,Morg N Thorg,Star Player
+54,Skeleton,Undead
+55,Zombie,Undead
+56,Ghoul,Undead
+57,Wight,Undead
+58,Mummy,Undead
+59,Count Luthor von Drakenborg,Star Player
+60,Halfling,Halfling
+61,Treeman,Halfling
+62,Lineman,Norse
+63,Thrower,Norse
+64,Runner,Norse
+65,Berserker,Norse
+66,Ulfwerener,Norse
+67,Yhetee,Norse
+68,Linewoman,Amazon
+69,Thrower,Amazon
+70,Catcher,Amazon
+71,Blitzer,Amazon
+72,Lineman,Pro Elf
+73,Thrower,Pro Elf
+74,Catcher,Pro Elf
+75,Blitzer,Pro Elf
+77,Lineman,High Elf
+78,Thrower,High Elf
+79,Catcher,High Elf
+80,Blitzer,High Elf
+81,Skeleton,Khemri
+82,Thro Ra,Khemri
+83,Blitz Ra,Khemri
+84,Tomb Guardian,Khemri
+86,Zombie,Necromantic
+87,Ghoul,Necromantic
+88,Wight,Necromantic
+89,Flesh Golem,Necromantic
+90,Werewolf,Necromantic
+91,Rotter,Nurgle
+92,Pestigor,Nurgle
+93,Nurgle Warrior,Nurgle
+94,Beast Of Nurgle,Nurgle
+95,Gnoblar,Ogre
+96,Ogre,Ogre
+97,Thrall,Vampire
+98,Vampire,Vampire
+99,Zara The Slayer,Star Player
+100,Scrappa Sorehead,Star Player
+101,Eldril Sidewinder,Star Player
+102,Lord Borak The Despoiler,Star Player
+103,Deeproot Strongbranch,Star Player
+104,Setekh,Star Player
+105,Ramtut III,Star Player
+106,Icepelt Hammerblow,Star Player
+107,Bombardier,Goblin
+108,Hobgoblin,Chaos Dwarf
+109,Blocker,Chaos Dwarf
+110,Bull Centaur,Chaos Dwarf
+111,Minotaur,Chaos Dwarf
+123,Goblin,Underworld
+124,Lineman,Underworld
+125,Thrower,Underworld
+126,Blitzer,Underworld
+127,Troll,Underworld
+133,Bomber Dribblesnot,Star Player
+134,Zzharg Madeye,Star Player
+135,Mighty Zug,Star Player
+136,J Earlice,Star Player
+137,Hubris Rakarth,Star Player
+138,Hakflem Skuttlespike,Star Player
+139,Lineman,Bretonnia
+140,Blitzer,Bretonnia
+141,Blocker,Bretonnia
+142,Lineman,Kislev
+143,Catcher,Kislev
+144,Blitzer,Kislev
+145,Tame Bear,Kislev
+146,Barik Farblast,Star Player
+147,Dolfar Longstride,Star Player
+148,Grotty,Star Player
+149,Glart Smashrip Jr,Star Player
+150,Prince Moranion,Star Player
+151,Roxanna Darknail,Star Player
+152,Soaren Hightower,Star Player
+154,Fezglitch,Star Player
+157,Ithaca Benoin,Star Player
+158,Lewdgrip Whiparm,Star Player
+160,Max Spleenripper,Star Player
+161,Puggy Baconbreath,Star Player
+162,Skitter Stab Stab,Star Player
+163,Ugroth Bolgrot,Star Player
+164,Brick Farth,Star Player
+165,Referee,Extra
+214,Grashnak Blackhoof,Star Player
+215,Griff Oberwald,Star Player
+216,Grim Ironjaw,Star Player
+217,Headsplitter,Star Player
+218,Jordel Freshbreeze,Star Player
+219,Ripper,Star Player
+220,Slibli,Star Player
+221,Varag Ghoul Chewer,Star Player
+222,Horkon Heartripper,Star Player
+223,Morg N Thorg,Star Player
+224,Count Luthor von Drakenborg,Star Player
+225,Zara The Slayer,Star Player
+226,Scrappa Sorehead,Star Player
+227,Eldril Sidewinder,Star Player
+228,LordBorak The Despoiler,Star Player
+229,Deeproot Strongbranch,Star Player
+230,Setekh,Star Player
+231,Ramtut III,Star Player
+232,Icepelt Hammerblow,Star Player
+233,Bomber Dribblesnot,Star Player
+234,Zzharg Madeye,Star Player
+235,Mighty Zug,Star Player
+236,J Earlice,Star Player
+237,Hubris Rakarth,Star Player
+238,Hakflem Skuttlespike,Star Player
+239,Barik Farblast,Star Player
+240,Dolfar Longstride,Star Player
+241,Grotty,Star Player
+242,Glart Smashrip Jr,Star Player
+243,Prince Moranion,Star Player
+244,Roxanna Darknail,Star Player
+245,Soaren Hightower,Star Player
+247,Fezglitch,Star Player
+250,Ithaca Benoin,Star Player
+251,Lewdgrip Whiparm,Star Player
+252,Max Spleenripper,Star Player
+253,Puggy Baconbreath,Star Player
+254,Skitter Stab Stab,Star Player
+255,Ugroth Bolgrot,Star Player
+256,Brick Farth,Star Player
+260,Bob,Extra
+261,Cheerleader Orc,Extra
+262,Cabalcopter,Extra
+263,Assistant,Extra
+264,Jim Cabal,Extra
+265,Bob Cabal,Extra
+266,Public,Extra
+267,Goblin Cabal,Extra
+275,Hemlock,Star Player
+276,Hemlock,Star Player
+277,Wilhelm Chaney,Star Player
+278,Wilhelm Chaney,Star Player
+279,Willow Rosebark,Star Player
+280,Willow Rosebark,Star Player
+281,Lottabottol,Star Player
+282,Lottabottol,Star Player
+283,Quetzal Leap,Star Player
+284,Quetzal Leap,Star Player
+289,Cheerleaders Human,Extra
+290,Cheerleader Human,Extra
+291,Cheerleader Dwarf,Extra
+293,Bertha Bigfist,Star Player
+294,Bertha Bigfist,Star Player
+295,Rashnak Backstabber,Star Player
+296,Rashnak Backstabber,Star Player
+299,Hthark The Unstoppable,Star Player
+300,Hthark The Unstoppable,Star Player
+301,Crazy Igor,Star Player
+302,Crazy Igor,Star Player
+303,Fungus The Loon,Star Player
+304,Fungus The Loon,Star Player
+305,Nobbla Blackwart,Star Player
+306,Nobbla Blackwart,Star Player
+307,Humerus Carpal,Star Player
+308,Humerus Carpal,Star Player
+309,Boomer Eziasson,Star Player
+310,Boomer Eziasson,Star Player
+313,Flint Churnblade,Star Player
+314,Flint Churnblade,Star Player
+315,Hack Enslash,Star Player
+316,Hack Enslash,Star Player
+317,Helmut Wulf,Star Player
+318,Helmut Wulf,Star Player
+319,Sinnedbad,Star Player
+320,Sinnedbad,Star Player
+323,Lineman,Mercenary Aristocrats
+324,Blitzer,Mercenary Aristocrats
+325,Thrower,Mercenary Aristocrats
+326,Catcher,Mercenary Aristocrats
+327,Thrall,Mercenary Aristocrats
+328,Vampire,Mercenary Aristocrats
+329,Hobgoblin,Mercenary Aristocrats
+330,Blocker,Mercenary Aristocrats
+331,Bull Centaur,Mercenary Aristocrats
+332,Minotaur,Mercenary Aristocrats
+333,Lineman,Mercenary Aristocrats
+334,Blocker,Mercenary Aristocrats
+335,Blitzer,Mercenary Aristocrats
+336,Beastman,Mercenary Chaos
+337,Warrior,Mercenary Chaos
+338,Minotaur,Mercenary Chaos
+339,Lineman,Mercenary Chaos
+340,Thrower,Mercenary Chaos
+341,Gutter Runner,Mercenary Chaos
+342,Blitzer,Mercenary Chaos
+343,Rat Ogre,Mercenary Chaos
+344,Blitzer,Mercenary Chaos
+345,Lineman,Mercenary Chaos
+346,Assassin,Mercenary Chaos
+347,Runner,Mercenary Chaos
+348,Witch Elf,Mercenary Chaos
+355,Beastman,Mercenary Chaos Gods
+356,Warrior,Mercenary Chaos Gods
+357,Minotaur,Mercenary Chaos Gods
+358,Rotter,Mercenary Chaos Gods
+359,Pestigor,Mercenary Chaos Gods
+360,Nurgle Warrior,Mercenary Chaos Gods
+361,Beast Of Nurgle,Mercenary Chaos Gods
+362,Hobgoblin,Mercenary Easterners
+363,Blocker,Mercenary Easterners
+364,Bull Centaur,Mercenary Easterners
+365,Minotaur,Mercenary Easterners
+366,Lineman,Mercenary Easterners
+367,Blitzer,Mercenary Easterners
+368,Thrower,Mercenary Easterners
+369,Goblin,Mercenary Easterners
+370,Black Orc Blocker,Mercenary Easterners
+371,Troll,Mercenary Easterners
+372,Goblin,Mercenary Easterners
+373,Looney,Mercenary Easterners
+374,Pogoer,Mercenary Easterners
+375,Bombardier,Mercenary Easterners
+376,Fanatic,Mercenary Easterners
+377,Troll,Mercenary Easterners
+378,Lineman,Mercenary Easterners
+379,Blitzer,Mercenary Easterners
+380,Thrower,Mercenary Easterners
+381,Gutter Runner,Mercenary Easterners
+382,Rat Ogre,Mercenary Easterners
+387,Lineman,Mercenary Elf
+388,Blitzer,Mercenary Elf
+389,Catcher,Mercenary Elf
+390,Thrower,Mercenary Elf
+391,Lineman,Mercenary Elf
+392,Runner,Mercenary Elf
+393,Blitzer,Mercenary Elf
+394,Assassin,Mercenary Elf
+395,Witch Elf,Mercenary Elf
+396,Lineman,Mercenary Elf
+397,Catcher,Mercenary Elf
+398,Thrower,Mercenary Elf
+399,Wardancer,Mercenary Elf
+400,Treeman,Mercenary Elf
+401,Lineman,Mercenary Explorers
+402,Blitzer,Mercenary Explorers
+403,Catcher,Mercenary Explorers
+404,Tame Bear,Mercenary Explorers
+405,Lineman,Mercenary Explorers
+406,Thrower,Mercenary Explorers
+407,Runner,Mercenary Explorers
+408,Berserker,Mercenary Explorers
+409,Ulfwerener,Mercenary Explorers
+410,Yhetee,Mercenary Explorers
+411,Linewoman,Mercenary Explorers
+412,Thrower,Mercenary Explorers
+413,Catcher,Mercenary Explorers
+414,Blitzer,Mercenary Explorers
+415,Skink,Mercenary Explorers
+416,Saurus,Mercenary Explorers
+417,Kroxigor,Mercenary Explorers
+418,Blocker,Mercenary Good Guys
+419,Blitzer,Mercenary Good Guys
+420,Lineman,Mercenary Good Guys
+421,Blitzer,Mercenary Good Guys
+422,Lineman,Mercenary Good Guys
+423,Catcher,Mercenary Good Guys
+424,Thrower,Mercenary Good Guys
+425,Ogre,Mercenary Good Guys
+426,Blocker,Mercenary Good Guys
+427,Blitzer,Mercenary Good Guys
+428,Troll Slayer,Mercenary Good Guys
+429,Runner,Mercenary Good Guys
+430,Death Roller,Mercenary Good Guys
+431,Halfling,Mercenary Good Guys
+432,Treeman,Mercenary Good Guys
+433,Lineman,Mercenary Good Guys
+434,Catcher,Mercenary Good Guys
+435,Thrower,Mercenary Good Guys
+436,Wardancer,Mercenary Good Guys
+437,Treeman,Mercenary Good Guys
+438,Lineman,Mercenary Human
+439,Blitzer,Mercenary Human
+440,Catcher,Mercenary Human
+441,Thrower,Mercenary Human
+442,Ogre,Mercenary Human
+443,Lineman,Mercenary Human
+444,Blocker,Mercenary Human
+445,Blitzer,Mercenary Human
+446,Lineman,Mercenary Human
+447,Blitzer,Mercenary Human
+448,Catcher,Mercenary Human
+449,Tame Bear,Mercenary Human
+450,Lineman,Mercenary Human
+451,Runner,Mercenary Human
+452,Thrower,Mercenary Human
+453,Berserker,Mercenary Human
+454,Ulfwerener,Mercenary Human
+455,Yhetee,Mercenary Human
+456,Linewoman,Mercenary Human
+457,Thrower,Mercenary Human
+458,Catcher,Mercenary Human
+459,Blitzer,Mercenary Human
+460,Lineman,Mercenary Savage
+461,Blitzer,Mercenary Savage
+462,Thrower,Mercenary Savage
+463,Goblin,Mercenary Savage
+464,Black Orc Blocker,Mercenary Savage
+465,Troll,Mercenary Savage
+466,Goblin,Mercenary Savage
+467,Looney,Mercenary Savage
+468,Pogoer,Mercenary Savage
+469,Bombardier,Mercenary Savage
+470,Fanatic,Mercenary Savage
+471,Troll,Mercenary Savage
+472,Skink,Mercenary Savage
+473,Saurus,Mercenary Savage
+474,Kroxigor,Mercenary Savage
+475,Ogre,Mercenary Savage
+476,Gnoblar,Mercenary Savage
+477,Ogre,Mercenary Stunty
+478,Gnoblar,Mercenary Stunty
+479,Goblin,Mercenary Stunty
+480,Bombardier,Mercenary Stunty
+481,Looney,Mercenary Stunty
+482,Pogoer,Mercenary Stunty
+483,Fanatic,Mercenary Stunty
+484,Troll,Mercenary Stunty
+485,Halfling,Mercenary Stunty
+486,Treeman,Mercenary Stunty
+492,Skeleton,Mercenary Undead
+493,Zombie,Mercenary Undead
+494,Ghoul,Mercenary Undead
+495,Wight,Mercenary Undead
+496,Mummy,Mercenary Undead
+497,Werewolf,Mercenary Undead
+498,Flesh Golem,Mercenary Undead
+499,Skeleton,Mercenary Undead
+500,Thro Ra,Mercenary Undead
+501,Blitz Ra,Mercenary Undead
+502,Tomb Guardian,Mercenary Undead
+503,Thrall,Mercenary Undead
+504,Vampire,Mercenary Undead
+617,Barik Farblast,AllStars
+618,Barik Farblast,AllStars
+619,Bertha Bigfist,AllStars
+620,Bertha Bigfist,AllStars
+621,Bomber Dribblesnot,AllStars
+622,Bomber Dribblesnot,AllStars
+623,Boomer Eziasson,AllStars
+624,Boomer Eziasson,AllStars
+625,Brick Farth,AllStars
+626,Brick Farth,AllStars
+627,Count Luthorvon Drakenborg,AllStars
+628,Count Luthorvon Drakenborg,AllStars
+629,Crazy Igor,AllStars
+630,Crazy Igor,AllStars
+631,Deeproot Strongbranch,AllStars
+632,Deeproot Strongbranch,AllStars
+633,Dolfar Longstride,AllStars
+634,Dolfar Longstride,AllStars
+635,Eldril Sidewinder,AllStars
+636,Eldril Sidewinder,AllStars
+637,Fezglitch,AllStars
+638,Fezglitch,AllStars
+639,Flint Churnblade,AllStars
+640,Flint Churnblade,AllStars
+641,Fungus The Loon,AllStars
+642,Fungus The Loon,AllStars
+643,Glart Smashrip Jr,AllStars
+644,Glart Smashrip Jr,AllStars
+645,Grashnak Blackhoof,AllStars
+646,Grashnak Blackhoof,AllStars
+647,Griff Oberwald,AllStars
+648,Griff Oberwald,AllStars
+649,Grim Ironjaw,AllStars
+650,Grim Ironjaw,AllStars
+651,Grotty,AllStars
+652,Grotty,AllStars
+653,Hack Enslash,AllStars
+654,Hack Enslash,AllStars
+655,Hakflem Skuttlespike,AllStars
+656,Hakflem Skuttlespike,AllStars
+657,Headsplitter,AllStars
+658,Headsplitter,AllStars
+659,Helmut Wulf,AllStars
+660,Helmut Wulf,AllStars
+661,Hemlock,AllStars
+662,Hemlock,AllStars
+663,Horkon Heartripper,AllStars
+664,Horkon Heartripper,AllStars
+665,Hthark The Unstoppable,AllStars
+666,Hthark The Unstoppable,AllStars
+667,Hubris Rakarth,AllStars
+668,Hubris Rakarth,AllStars
+669,Humerus Carpal,AllStars
+670,Humerus Carpal,AllStars
+671,Icepelt Hammerblow,AllStars
+672,Icepelt Hammerblow,AllStars
+673,Ithaca Benoin,AllStars
+674,Ithaca Benoin,AllStars
+675,J Earlice,AllStars
+676,J Earlice,AllStars
+677,Jordel Freshbreeze,AllStars
+678,Jordel Freshbreeze,AllStars
+679,Lewdgrip Whiparm,AllStars
+680,Lewdgrip Whiparm,AllStars
+681,Lottabottol,AllStars
+682,Lottabottol,AllStars
+683,Lord Borak The Despoiler,AllStars
+684,Lord Borak The Despoiler,AllStars
+685,Max Spleenripper,AllStars
+686,Max Spleenripper,AllStars
+687,Mighty Zug,AllStars
+688,Mighty Zug,AllStars
+689,Morg N Thorg,AllStars
+690,Morg N Thorg,AllStars
+691,Prince Moranion,AllStars
+692,Prince Moranion,AllStars
+693,Nobbla Blackwart,AllStars
+694,Nobbla Blackwart,AllStars
+695,Puggy Baconbreath,AllStars
+696,Puggy Baconbreath,AllStars
+697,Quetzal Leap,AllStars
+698,Quetzal Leap,AllStars
+699,Ramtut III,AllStars
+700,Ramtut III,AllStars
+701,Rashnak Backstabber,AllStars
+702,Rashnak Backstabber,AllStars
+703,Ripper,AllStars
+704,Ripper,AllStars
+705,Roxanna Darknail,AllStars
+706,Roxanna Darknail,AllStars
+707,Scrappa Sorehead,AllStars
+708,Scrappa Sorehead,AllStars
+709,Setekh,AllStars
+710,Setekh,AllStars
+711,Sinnedbad,AllStars
+712,Sinnedbad,AllStars
+713,Skitter StabStab,AllStars
+714,Skitter StabStab,AllStars
+715,Slibli,AllStars
+716,Slibli,AllStars
+717,Soaren Hightower,AllStars
+718,Soaren Hightower,AllStars
+719,Ugroth Bolgrot,AllStars
+720,Ugroth Bolgrot,AllStars
+721,Varag Ghoul Chewer,AllStars
+722,Varag Ghoul Chewer,AllStars
+723,Willow Rosebark,AllStars
+724,Willow Rosebark,AllStars
+725,Wilhelm Chaney,AllStars
+726,Wilhelm Chaney,AllStars
+727,Zara The Slayer,AllStars
+728,Zara The Slayer,AllStars
+729,Zzharg Madeye,AllStars
+730,Zzharg Madeye,AllStars
+732,Goblin,Mercenary Chaos
+733,Lineman,Mercenary Chaos
+734,Thrower,Mercenary Chaos
+735,Blitzer,Mercenary Chaos
+736,Troll,Mercenary Chaos
+737,Gnoblar,Mercenary Easterners
+738,Ogre,Mercenary Easterners
+739,Lineman,Mercenary Elf
+740,Blitzer,Mercenary Elf
+741,Thrower,Mercenary Elf
+742,Lineman,AllStars
+743,Catcher,AllStars
+744,Thrower,AllStars
+745,Runner,AllStars
+746,Blocker,AllStars
+747,Blitzer,AllStars
+748,Big Guy,AllStars
+749,Catcher,Mercenary Elf

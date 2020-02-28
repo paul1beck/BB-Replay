@@ -185,7 +185,9 @@ races = {
     "24":"Bretonnian",
     "25":"Kislev"}
 
+race_list = ['','Human','Dwarf','Skaven','Orc','Lizardman','Goblin','Wood Elf','Chaos','Dark Elf','Undead','Halfling','Norse','Amazon','Elven Union','High Elf','Khemri','Necromantic','Nurgle','Ogre','Vampire','Chaos Dwarf','Underworld','','Bretonnian','Kislev']
 
+skills = ['','StripBall', 'IncreaseStrength', 'IncreaseAgility', 'IncreaseMovement', 'IncreaseArmour', 'Catch', 'Dodge', 'Sprint', 'PassBlock', 'FoulAppearance', 'Leap', 'ExtraArms', 'MightyBlow', 'Leader', 'Horns', 'TwoHeads', 'StandFirm', 'AlwaysHungry', 'Regeneration', 'TakeRoot', 'Accurate', 'BreakTackle', 'SneakyGit', '', 'Chainsaw', 'Dauntless', 'DirtyPlayer', 'DivingCatch', 'DumpOff', 'Block', 'BoneHead', 'VeryLongLegs', 'DisturbingPresence', 'DivingTackle', 'Fend', 'Frenzy', 'Grab', 'Guard', 'HailMaryPass', 'Juggernaut', 'JumpUp', '', '', 'Loner', 'NervesOfSteel', 'NoHands', 'Pass', 'PilingOn', 'PrehensileTail', 'Pro', 'ReallyStupid', 'RightStuff', 'SafeThrow', 'SecretWeapon', 'Shadowing', 'SideStep', 'Tackle', 'StrongArm', 'Stunty', 'SureFeet', 'SureHands', '', 'ThickSkull', 'ThrowTeamMate', '', '', 'WildAnimal', 'Wrestle', 'Tentacles', 'MultipleBlock', 'Kick', 'KickOffReturn', '', 'BigHand', 'Claw', 'BallChain', 'Stab', 'HypnoticGaze', 'Stakes', 'Bombardier', 'Decay', 'NurglesRot', 'Titchy', 'BloodLust', 'FanFavourite', 'Animosity']
 
 
 
